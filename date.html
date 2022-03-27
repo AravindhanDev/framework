@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="style.css">
+<title>
+sample_details
+</title>   
+</head>
+<body>
+		<h2 style="text-align:left;"> Date:  <span id="date"></span>  
+<span style="float:right;"> Time:  <span id="time"></span>  </h2>
+<script>
+var dt=new Date();
+var changeTime = setInterval(function change() {
+	dt=new Date();
+	document.getElementById("time").innerHTML=dt.toLocaleTimeString();
+},1000)
+document.getElementById("date").innerHTML = dt.toLocaleDateString('en-GB')
+</script>
+</body>
+</html>

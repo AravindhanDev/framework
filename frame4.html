@@ -1,0 +1,38 @@
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+<title>
+</title>
+</head>
+<body>
+<h2 align="left">Proverb :</h2>
+
+<h3 id="place"></h3>
+
+<SCRIPT LANGUAGE="JAVASCRIPT">
+var rand = new Array ();
+rand[0] = "Iinking about you!";
+rand[1] = "I wasnking about you!";
+rand[2] = "I was";
+rand[3] = "I was just thinking about you!";
+rand[4] = "I was jus you!";
+rand[5] = "I thinking about you!";
+rand[6] = "Ibout you!";
+rand[7] = "I was just thinking about you!";
+rand[8] = "Iust thinking about you!";
+rand[9] = "wahinking about you!";
+rand[10] = "I waust thinking about you!";
+rand[11] = "I waking about you!";
+rand[12] = "I wahinking about you!";
+rand[13] = "I wabout you!";
+rand[14] = "I was jug about you!";
+rand[15] = "I was juout you!";
+rand[16] = "I was juinbout you!";
+
+var changeProverb = setInterval(function changeProverb() {
+    var i = Math.floor(rand.length * Math.random());    
+    document.getElementById('place').innerHTML = rand[i]
+},5000);
+</script>
+</body>
+</html>
